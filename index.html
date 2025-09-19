@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Solutions - Diseño Web Profesional</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    
+    <!-- Cargar Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Cargar Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Configuración de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#7c3aed',
+                        accent: '#ec4899',
+                        dark: '#1b2310',
+                        light: '#f8fafc',
+                        gray: '#64748b',
+                        success: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Enlace a archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                            <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007;39.7813 12.8398;38.5103 13.7113;35.9788 14.9393;33.7095 15.4811;30.9875 16.131;27.6413 16.5217;24 16.5217;20.3587 16.5217;17.0125 16.131;14.2905 15.4811;12.0012 14.9346;9.44505 13.6897;8.18538 12.8168;8.17384 12.7925;8.16216 12.767;8.15052 12.7408;8.09919 12.6249;8.05721 12.5114;8.02977 12.411;8.00356 12.3152;8.00039 12.2667;8.00004 12.2612;8.00004 12.261;8 12.2607;8.00004 12.2612;8.00004 12.2359;8.0104 11.9233;8.68485 11.3686;9.34546 10.8254;10.4222 10.2469;11.9291 9.72276;14.9242 8.68098;19.1919 8;24 8;28.8081 8;33.0758 8.68098;36.0709 9.72276;37.5778 10.2469;38.6545 10.8254;39.3151 11.3686;39.9006 11.8501;39.9857 12.1489;39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948;43.0878 15.1662;43.104 15.1371L41.3563 14.1648C43.104 15.1371;43.1038 15.1374;43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094;43.1377 15.0754;43.1497 15.0527C43.1738 15.0075;43.2062 14.9455;43.244 14.8701C43.319 14.7208;43.4196 14.511;43.5217 14.2683;43.6901 13.8679;44 13.0689;44 12.2609C44 10.5573;43.003 9.22254;41.8558 8.2791;40.6947 7.32427;39.1354 6.55361;37.385 5.94477;33.8654 4.72057;29.133 4;24 4C18.867 4;14.1346 4.72057;10.615 5.94478C8.86463 6.55361;7.30529 7.32428;6.14419 8.27911C4.99695 9.22255;3.99999 10.5573;3.99999 12.2609C3.99999 13.1275;4.29264 13.9078;4.49321 14.3607;4.60375 14.6102;4.71348 14.8196;4.79687 14.9689;4.83898 15.0444;4.87547 15.1065;4.9035 15.1529;4.91754 15.1762;4.92954 15.1957;4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391;12.9179 19.2658;13.3617 19.3718C16.4281 20.1039;20.0901 20.5217;24 20.5217C27.9099 20.5217;31.5719 20.1039;34.6383 19.3718C35.082 19.2658;35.5339 19.1391;35.9868 18.996Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-xl font-bold">Web Solutions</h2>
+                </div>
+                
+                <!-- Menú de navegación (desktop) -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#">Inicio</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#servicios">Servicios</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#proyectos">Portafolio</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#contacto">Contacto</a>
+                </nav>
+                
+                <!-- Botón de cotización (desktop) -->
+                <button class="hidden md:block bg-[#affa4c] text-[#1b2310] text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#c4f5a1] transition-colors">
+                    Solicitar Cotización
+                </button>
+                
+                <!-- Botón de menú móvil -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Menú móvil (oculto por defecto) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#">Inicio</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#servicios">Servicios</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#proyectos">Portafolio</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#contacto">Contacto</a>
+                    <button class="bg-[#affa4c] text-[#1b2310] text-base font-bold px-5 py-3 rounded-lg hover:bg-[#c4f5a1] transition-colors mt-2">
+                        Solicitar Cotización
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="max-w-2xl">
+            <h1 class="text-white text-3xl md:text-5xl font-black leading-tight">
+                Diseño Web Exprés y Accesible
+            </h1>
+            <p class="text-white text-base md:text-lg mt-4">
+                Transforma tu visión en una presencia digital impactante. Sitios web modernos, funcionales y optimizados para el éxito de tu negocio.
+            </p>
+        </div>
+        <a href="#servicios" class="btn-neon">
+            Ver Servicios
+        </a>
+    </section>
+    
+    <!-- Servicios Section -->
+    <section id="servicios" class="section">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Servicio 1: Tienda con Pocos Productos -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Tienda con Pocos Productos</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$12.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Panel de administración
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Integración de pagos
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Servicio 2: Invitación a Eventos -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Invitación a Eventos</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$8.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Formulario de confirmación
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Galería de fotos
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Servicio 3: Tarjeta de Presentación -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Tarjeta de Presentación</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$5.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Enlaces personalizados
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño minimalista
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Servicio 4: Landing Page -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Landing Page</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$10.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Formularios de contacto
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Llamadas a la acción
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Servicio 5: Diseño Personalizado -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Diseño Personalizado</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$15.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño exclusivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Hasta 10 secciones
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Servicio 6: Web Express -->
+            <div class="service-card">
+                <div class="text-[#affa4c] text-3xl mb-4">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold mb-2">Web Express</h3>
+                <p class="text-white text-xl md:text-2xl font-black mb-4">$7.000 ARS</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Diseño responsivo
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        SEO básico incluido
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        Entrega en 24h
+                    </li>
+                    <li class="flex items-center gap-3 text-white text-sm">
+                        <i class="fas fa-check text-green-500"></i>
+                        3 secciones incluidas
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Características Incluidas -->
+    <section class="section">
+        <h2 class="section-title">Todos los Planes Incluyen</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
+                <i class="fas fa-globe text-white text-xl"></i>
+                <h3 class="text-white text-base font-bold">Diseño Responsivo</h3>
+            </div>
+            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
+                <i class="fas fa-mobile-alt text-white text-xl"></i>
+                <h3 class="text-white text-base font-bold">Adaptado a Móviles</h3>
+            </div>
+            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
+                <i class="fas fa-search text-white text-xl"></i>
+                <h3 class="text-white text-base font-bold">Optimizado para SEO</h3>
+            </div>
+            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
+                <i class="fas fa-shield-alt text-white text-xl"></i>
+                <h3 class="text-white text-base font-bold">Seguridad Reforzada</h3>
+            </div>
+            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
+                <i class="fas fa-clock text-white text-xl"></i>
+                <h3 class="text-white text-base font-bold">Entrega Rápida</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Proceso de Trabajo -->
+    <section class="section">
+        <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
+                        1
+                    </div>
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                </div>
+                <div>
+                    <h3 class="text-white text-base font-bold">Consulta Inicial</h3>
+                    <p class="text-[#b2cc8e] text-sm">Entendemos tus necesidades y objetivos.</p>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
+                        2
+                    </div>
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                </div>
+                <div>
+                    <h3 class="text-white text-base font-bold">Diseño y Desarrollo</h3>
+                    <p class="text-[#b2cc8e] text-sm">Creamos un diseño a medida y lo desarrollamos.</p>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
+                        3
+                    </div>
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                </div>
+                <div>
+                    <h3 class="text-white text-base font-bold">Revisiones y Aprobación</h3>
+                    <p class="text-[#b2cc8e] text-sm">Realizamos ajustes según tus comentarios.</p>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
+                        4
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-base font-bold">Lanzamiento y Soporte</h3>
+                    <p class="text-[#b2cc8e] text-sm">Tu sitio web está en línea y te brindamos soporte continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section text-center py-16">
+        <h2 class="text-white text-2xl md:text-3xl font-bold mb-4 max-w-2xl mx-auto">
+            Da el Primer Paso Hacia tu Éxito Digital
+        </h2>
+        <p class="text-white text-base mb-8 max-w-2xl mx-auto">
+            Solicita una cotización sin compromiso y descubre cómo podemos ayudarte a alcanzar tus metas.
+        </p>
+        <a href="#contacto" class="btn-neon">
+            Contáctanos
+        </a>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a class="text-[#b2cc8e] text-base" href="#">Política de Privacidad</a>
+            <a class="text-[#b2cc8e] text-base" href="#">Términos de Servicio</a>
+        </div>
+        <div class="flex justify-center gap-4 mb-6">
+            <a href="#" class="text-[#b2cc8e] text-xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-[#b2cc8e] text-xl">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-[#b2cc8e] text-xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="text-[#b2cc8e] text-base">© 2024 Web Solutions. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- Enlace a archivo JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
