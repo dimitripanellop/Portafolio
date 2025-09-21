@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Solutions - Diseño Web Profesional</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    
-    <!-- Cargar Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Cargar Font Awesome para los iconos -->
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Diseño Web Profesional</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Configuración de Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4f46e5',
-                        secondary: '#7c3aed',
-                        accent: '#ec4899',
-                        dark: '#1b2310',
-                        light: '#f8fafc',
-                        gray: '#64748b',
-                        success: '#10b981',
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Enlace a archivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +21,7 @@
                     <div class="w-8 h-8 flex items-center justify-center">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
                             <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007;39.7813 12.8398;38.5103 13.7113;35.9788 14.9393;33.7095 15.4811;30.9875 16.131;27.6413 16.5217;24 16.5217;20.3587 16.5217;17.0125 16.131;14.2905 15.4811;12.0012 14.9346;9.44505 13.6897;8.18538 12.8168;8.17384 12.7925;8.16216 12.767;8.15052 12.7408;8.09919 12.6249;8.05721 12.5114;8.02977 12.411;8.00356 12.3152;8.00039 12.2667;8.00004 12.2612;8.00004 12.261;8 12.2607;8.00004 12.2612;8.00004 12.2359;8.0104 11.9233;8.68485 11.3686;9.34546 10.8254;10.4222 10.2469;11.9291 9.72276;14.9242 8.68098;19.1919 8;24 8;28.8081 8;33.0758 8.68098;36.0709 9.72276;37.5778 10.2469;38.6545 10.8254;39.3151 11.3686;39.9006 11.8501;39.9857 12.1489;39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948;43.0878 15.1662;43.104 15.1371L41.3563 14.1648C43.104 15.1371;43.1038 15.1374;43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094;43.1377 15.0754;43.1497 15.0527C43.1738 15.0075;43.2062 14.9455;43.244 14.8701C43.319 14.7208;43.4196 14.511;43.5217 14.2683;43.6901 13.8679;44 13.0689;44 12.2609C44 10.5573;43.003 9.22254;41.8558 8.2791;40.6947 7.32427;39.1354 6.55361;37.385 5.94477;33.8654 4.72057;29.133 4;24 4C18.867 4;14.1346 4.72057;10.615 5.94478C8.86463 6.55361;7.30529 7.32428;6.14419 8.27911C4.99695 9.22255;3.99999 10.5573;3.99999 12.2609C3.99999 13.1275;4.29264 13.9078;4.49321 14.3607;4.60375 14.6102;4.71348 14.8196;4.79687 14.9689;4.83898 15.0444;4.87547 15.1065;4.9035 15.1529;4.91754 15.1762;4.92954 15.1957;4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391;12.9179 19.2658;13.3617 19.3718C16.4281 20.1039;20.0901 20.5217;24 20.5217C27.9099 20.5217;31.5719 20.1039;34.6383 19.3718C35.082 19.2658;35.5339 19.1391;35.9868 18.996Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948;43.0878 15.1662;43.104 15.1371L41.3563 14.1648C43.104 15.1371;43.1038 15.1374;43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094;43.1377 15.0754;43.1497 15.0527C43.1738 15.0075;43.2062 14.9455;43.244 14.8701C43.319 14.7208;43.4196 14.511;43.5217 14.2683C43.6901 13.8679;44 13.0689;44 12.2609C44 10.5573;43.003 9.22254;41.8558 8.2791C40.6947 7.32427;39.1354 6.55361;37.385 5.94477C33.8654 4.72057;29.133 4 24 4C18.867 4;14.1346 4.72057;10.615 5.94478C8.86463 6.55361;7.30529 7.32428;6.14419 8.27911C4.99695 9.22255;3.99999 10.5573;3.99999 12.2609C3.99999 13.1275;4.29264 13.9078;4.49321 14.3607;4.60375 14.6102;4.71348 14.8196;4.79687 14.9689;4.83898 15.0444;4.87547 15.1065;4.9035 15.1529;4.91754 15.1762;4.92954 15.1957;4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor"></path>
                         </svg>
                     </div>
                     <h2 class="text-white text-xl font-bold">Web Solutions</h2>
@@ -52,16 +29,12 @@
                 
                 <!-- Menú de navegación (desktop) -->
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#"         >Inicio    </a>
-                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#servicios">Servicios </a>
-                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#proyectos">Portafolio</a>
-                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#contacto" >Contacto  </a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#services">Servicios</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#portfolio">Portafolio</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#process">Proceso</a>
+                    <a class="text-white text-sm font-medium hover:text-[#affa4c] transition-colors" href="#pricing">Precios</a>
+                    <a class="px-4 py-2 rounded-md btn-primary text-sm" href="#contact">Contáctanos</a>
                 </nav>
-                
-                <!-- Botón de cotización (desktop) -->
-                <button class="hidden md:block bg-[#affa4c] text-[#1b2310] text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#c4f5a1] transition-colors">
-                    Solicitar Cotización
-                </button>
                 
                 <!-- Botón de menú móvil -->
                 <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -72,10 +45,10 @@
             <!-- Menú móvil (oculto por defecto) -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <nav class="flex flex-col space-y-4">
-                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#">Inicio</a>
-                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#servicios">Servicios</a>
-                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#proyectos">Portafolio</a>
-                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#contacto">Contacto</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#services">Servicios</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#portfolio">Portafolio</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#process">Proceso</a>
+                    <a class="text-white text-base font-medium hover:text-[#affa4c] transition-colors" href="#pricing">Precios</a>
                     <button class="bg-[#affa4c] text-[#1b2310] text-base font-bold px-5 py-3 rounded-lg hover:bg-[#c4f5a1] transition-colors mt-2">
                         Solicitar Cotización
                     </button>
@@ -83,273 +56,465 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="max-w-2xl">
             <h1 class="text-white text-3xl md:text-5xl font-black leading-tight">
-                Diseño Web Exprés y Accesible 
+                Soluciones Digitales Modernas para tu Negocio
             </h1>
             <p class="text-white text-base md:text-lg mt-4">
-                Transforma tu visión en una presencia digital impactante. Sitios web modernos, funcionales y optimizados para el éxito de tu negocio.
+                Creamos sitios web personalizados, rápidos y efectivos que se adaptan a tus necesidades específicas. Con entrega exprés y precios accesibles, ayudamos a tu negocio a tener presencia online en tiempo récord.
             </p>
         </div>
-        <a href="#servicios" class="btn-neon">
-            Ver Servicios
+        <a href="#services" class="btn-neon">
+            ¡Comienza tu proyecto!
         </a>
     </section>
-    
+
     <!-- Servicios Section -->
-    <section id="servicios" class="section">
+    <section id="services" class="section">
         <h2 class="section-title">Nuestros Servicios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <p class="section-subtitle">Explora nuestras soluciones diseñadas para cada tipo de necesidad.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Servicio 1: Tienda con Pocos Productos -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-shopping-bag"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shopping-bag text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Tienda con Pocos Productos</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Perfecta para emprendedores que comienzan a vender online con un catálogo reducido.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $12.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Panel de administración</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Integración de pagos</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Tienda con Pocos Productos</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$12.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Panel de administración
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Integración de pagos
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Tienda%20con%20Pocos%20Productos." target="_blank">Contactar por WhatsApp</a>
+                </div>
             </div>
             
             <!-- Servicio 2: Invitación a Eventos -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-calendar-alt"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-alt text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Invitación a Eventos</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Páginas elegantes para invitaciones digitales, bodas, cumpleaños y eventos especiales.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $8.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Formulario de confirmación</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Galería de fotos</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Invitación a Eventos</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$8.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Formulario de confirmación
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Galería de fotos
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Invitación%20a%20Eventos." target="_blank">Contactar por WhatsApp</a>
+                </div>
             </div>
             
             <!-- Servicio 3: Tarjeta de Presentación -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-id-card"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-id-card text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Tarjeta de Presentación</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Página personal con todos tus enlaces y contacto en un solo lugar.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $5.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Enlaces personalizados</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño minimalista</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Tarjeta de Presentación</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$5.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Enlaces personalizados
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño minimalista
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Tarjeta%20de%20Presentación." target="_blank">Contactar por WhatsApp</a>
+                </div>
             </div>
             
             <!-- Servicio 4: Landing Page -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-bullseye"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bullseye text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Landing Page</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Páginas de aterrizaje optimizadas para conversiones y campañas específicas.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $10.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Formularios de contacto</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Llamadas a la acción</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Landing Page</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$10.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Formularios de contacto
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Llamadas a la acción
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Landing%20Page." target="_blank">Contactar por WhatsApp</a>
+                </div>
             </div>
             
             <!-- Servicio 5: Diseño Personalizado -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-paint-brush"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-brush text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Diseño Personalizado</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Sitios web únicos y adaptados completamente a la identidad de tu marca.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $15.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño exclusivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Hasta 10 secciones</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Diseño Personalizado</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$15.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño exclusivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Hasta 10 secciones
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Diseño%20Personalizado." target="_blank">Contactar por WhatsApp</a>
+                </div>
             </div>
             
             <!-- Servicio 6: Web Express -->
             <div class="service-card">
-                <div class="text-[#affa4c] text-3xl mb-4">
-                    <i class="fas fa-rocket"></i>
+                <div class="flex-grow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-rocket text-[#affa4c] text-4xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Web Express</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Sitios web profesionales listos en 24 horas para proyectos urgentes.</p>
+                    <p class="text-3xl font-bold text-[#affa4c] mb-4">Desde $7.000 <span class="text-lg text-gray-400">ARS</span></p>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Diseño responsivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>SEO básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Entrega en 24h</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>3 secciones incluidas</li>
+                    </ul>
                 </div>
-                <h3 class="text-white text-lg font-bold mb-2">Web Express</h3>
-                <p class="text-white text-xl md:text-2xl font-black mb-4">$7.000 ARS</p>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Diseño responsivo
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        SEO básico incluido
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        Entrega en 24h
-                    </li>
-                    <li class="flex items-center gap-3 text-white text-sm">
-                        <i class="fas fa-check text-green-500"></i>
-                        3 secciones incluidas
-                    </li>
-                </ul>
+                <div class="mt-auto pt-4 space-y-3">
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-secondary" href="#portfolio">Ver Ejemplos</a>
+                    <a class="block text-center w-full px-4 py-2 rounded-md btn-primary" href="https://wa.me/tunumero?text=Hola,%20quisiera%20consultar%20por%20el%20servicio%20de%20Web%20Express." target="_blank">Contactar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Section -->
+    <section class="section bg-card" id="portfolio" x-data="{
+        activeTab: 'tiendas',
+        tabs: [
+            { id: 'tiendas', label: 'Tiendas' },
+            { id: 'invitaciones', label: 'Invitaciones' },
+            { id: 'tarjetas', label: 'Tarjetas Digitales' },
+            { id: 'landing', label: 'Landing Pages' },
+            { id: 'personalizado', label: 'Diseños Personalizados' },
+            { id: 'express', label: 'Web Express' }
+        ]
+    }">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">Nuestro Portafolio</h2>
+            <p class="section-subtitle">Ejemplos de nuestro trabajo, demostrando la calidad y versatilidad que ofrecemos.</p>
+            <div class="mb-8 border-b border-[#506a2f] flex justify-center flex-wrap">
+                <template :key="tab.id" x-for="tab in tabs">
+                    <button :class="{ 'active': activeTab === tab.id }" @click="activeTab = tab.id" class="tab-button" x-text="tab.label"></button>
+                </template>
+            </div>
+            <div class="relative">
+                <div x-show="activeTab === 'tiendas'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo de tienda online" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAErQUsjOFAjj4T-XCDiYx6UiPpnEB86vU_2xkRan3UHaxjt0e9crYAya1yEcuaRiDrXgqZZAzAm-y4eBG_Zm0Cc6_cJjnEh_WkpYqdY_NodLVnBLNwxb539NlXDz40don6Q-Vnxn9n1F9JgqSLasAA68F0o2bfCthc_KTsowSO6BAHvb5O81j2o3G1sbHsAveO7_48MTzxI7GN75tahowlXOvMYen0dkqnIFoVZtDUhR28seXP49MVKPn5YtBL7hsHLUaW9b2nuqA0"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Tienda de Cerámica</h4>
+                                        <p class="text-gray-300">Un diseño limpio para destacar productos artesanales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo de tienda online 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEz01I-wVjBUFBivmdxeBfqquFrXQiRZBMWkoSTZ_ZjfQ05-nFxHixnE9wsBTdNJwBXpKup9k1xnizg8t1_VBxkJsWdVwaxaM580pcoVbLs2-1MJ_lyza2roOVhuan45XxJWuppRIqOfdZBqm0ujHjZVF6AIP6LOJG3q1vz-njuoSpYK6UX5vp7F0Zqkd7j15JavUozeKDn8WhjrQmAGsJZTmDfHriuBlcG7q3i4XArORq0btOPEaGDDf0mtf2IR9ZwXt-S_NPLlDE"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Boutique de Accesorios</h4>
+                                        <p class="text-gray-300">E-commerce elegante con foco en la experiencia visual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+                <div x-cloak="" x-show="activeTab === 'invitaciones'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo invitación de boda" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmi5_Er2LOvbVEwmHo_niTQO4bkXbURQKQJKuwGduN6TXRa6MbOGTPG7Gn7gER1IwGj08Ce9D0b66pzP9hLMzKcebvuf-B5MvJS-vqQfB0dT2JSBgegVUGqrMbUPFEDA3eekUPGvKlYX9oGhFq55VjlhU8trZI9kvePMNFImqG_OGeBmNJxh5mPTTTb7p-2picKHtx-10KJbn3I0Lpzu8zuf9vV6Ho_FdNYkj7d4nnYqy6hLfueJLP_KhC5i6REhLjF4dk3FXKmAoT"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Invitación de Boda</h4>
+                                        <p class="text-gray-300">Diseño romántico con confirmación de asistencia integrada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo evento corporativo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDePbzmUrd_ZiX9f0hg9aXWBhte-43ZyR4O2p2k-3hreS2khxtMaezQpN1KDe_UGfRntZYh4b4UA6XLGZTONcnDODoYaVEsvRhD5FjRDnVTVuFhbccJooDR8nJ5e3Uuwhn1mSXOSxLvcIQiSuQuBIk3XV_KMZZrJQPT6c3mtEj5pCY4KrV7xN1HYg7q9iQ6v4p5TxaImFc-3UlRwT8pvPglRTczxhNH8KM0x_xqcacWcSD_bmjYl31dWzwktQv8LbJhQy7li9k6LQYG"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Evento Corporativo</h4>
+                                        <p class="text-gray-300">Página informativa para un congreso anual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+                <div x-cloak="" x-show="activeTab === 'tarjetas'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo tarjeta de presentación" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRI_IrtSWUtaBTAhiBgYVtPpivo0dfLR5k6-dHUrjbJ8TjHyT2JlVCblPhcUwTxkHFjVhsWtzJ2k8gVQrSCIeqz-wP9gdBSKfKwpDxoL8mfK4wYJAnBiqx2vxUywTu83FVBoBjvrXQ3pVEgh0WJdo66SV-pqWWleNSkc1dAonEZgst2Qgelrv8pLfFy-NOz726v_BGmufiLmFV3IR_M7U2s07Mc7SCe88y8hXhO6tzxvTDfrCB0wkiu0aVCoYw5ABJFPVV1RluFJbh"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Perfil Profesional</h4>
+                                        <p class="text-gray-300">Tarjeta digital para un fotógrafo freelance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo tarjeta de presentación 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQmc5qzg8gVjwK80NDkN0Y8-o5LusZqxdmb8tZN0NfKpLta5xDwKug25aiLL8AqyeXhG0puDqgTE-7Gv0bXuaCDdZ9U3KO0pDiuolHpbNGkEtKHSHe9WTeLObdMOuB6nxNUH49qkCL3rypn8s3oL0GhBOm7pmFzqv_ufkfqRUtY_3Nr4R6RIi9kuXXwMZalotYdyJ7HQH7JIbl3RjEo0KDswarb8UyUpM1cq1hzvsyZTC6aIJfqjKL65T5Qv_XclehJcn9gj0_f8V7"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Contacto de Consultor</h4>
+                                        <p class="text-gray-300">Página de contacto minimalista y directa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+                <div x-cloak="" x-show="activeTab === 'landing'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo landing page" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALQAIZeaOOkvFS9PasP_fIDS3znPHBE2lom4VDDsKUaTf9i5qCODQin297d4iuBB-4NCD2Ct2CByFQ77iIMocP6iqWMm_zmDiTBQaQdCPjb6nbuKmPkkoY-Ard7LJHc3EkB4YOfC19z1gRQL1_jxjVachHrt57y5awSqfRZWEKOsIIsgXq6ePwPE99CMb14WWOEZm703mhcTpHbc_8yqw_st1nLDFAeQ4ZU1poHS6YmDDFiqj0G6cTgt49YrMCDfvfz0horR5_C4yz"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Lanzamiento de App</h4>
+                                        <p class="text-gray-300">Landing page para captación de leads pre-lanzamiento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo landing page 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpoClzTFawCl-7rGZ_xJs8K1w8aMJ4OBgAV0kJx2AKwlkvEgQdmsgow3V72I8JHe3wvPORsn-JDiHwVWN-dj9T2gQGxcZ2uaupOZv9m6kR91F5OLJnz0q1BEgJi3O2m6E4J3BDL8kRoKXBHEgb-W1DZ8LRhJZZIUYe0S0zvvNn492lusDYABA1MukBqYG4wMRpBOGZIXbs6_t_5T1Fd0AQgPUWwl3Hk-RGegmb84eO9W7f7AAiaHyczoiUFEHHZerxqoCa7WKKxBr1"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Curso Online</h4>
+                                        <p class="text-gray-300">Página de ventas optimizada para la conversión.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+                <div x-cloak="" x-show="activeTab === 'personalizado'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo diseño personalizado" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM1CbiJIJIb5sheZeKeWI0kBOai2BC1cnwTOHzgOLVebDSmrtzpATgPD_AQMoRYxEsnteMjQnuc7J3r1SoUCfHIh3MmH_edN7wjj3h5v2FJWCK9mPaXX2J3hO5JzaoO6SuatwXGr_KZmAQAFKJ_00RqEvYjM_szVHQ2wmCn8cq5LQ7q3lb4GOJs-P09nigH2bwqqDL4tSA4ghnQQWkmGQ0eTzrma-HmAUyOGElEJwvI2XwdGM3WCckR7rlz5mO9acj6vgM63BfUtvS"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Sitio para Agencia Creativa</h4>
+                                        <p class="text-gray-300">Diseño único que refleja la identidad de la marca.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo diseño personalizado 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK8SXbRoncHF-4oAqPVKlgvC3DJ0wdwuIgvXA3or_N_pcjP8elcJlOMK3_nTTFnNZF5N0Cs25LuOhLCmr4UVTDaYhVOri8tQZCvk58sVD6YGanFr3z3Zfys3qxGlMLmf5sFHv24EDly92SIy2tfaSnT2a0_ya74tRSaQvzxtyBfsQ7PzFY-zbcLrdelDoyFkwakPHWHVaN9vyLsKvAtSKhVcLuNuXe_TMgfUrCDPq2oeSpf3ihdie7tBeFeeH9xcvyQQeUPu1KI8kT"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Portfolio de Artista</h4>
+                                        <p class="text-gray-300">Web a medida para exponer obras de arte digital.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
+                <div x-cloak="" x-show="activeTab === 'express'" x-transition="">
+                    <div class="relative" x-data="{ 
+                                    container: null, 
+                                    init() { this.container = this.$refs.carousel },
+                                    scroll(direction) { this.container.scrollBy({ left: direction * this.container.offsetWidth, behavior: 'smooth' }) }
+                                }">
+                        <div class="flex overflow-x-auto carousel snap-x snap-mandatory" x-ref="carousel">
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo web express" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBehE4-rTbphrenI5VY3YZLlMMAAW85qrCBNt8MPSpzGReUJBTo2B2JXZg2LhmQKlpUGYKhsU7OyBFdq7_Fakgbjj-q5sv2Q0DnqnwT4BAcx8Lq4RgWBRdCAxrh-iftAE0RcKG3jWJkims0W0z2aAbfaVAjiBptsYvRknbUxFGNobEk28r_yvBykQGa2FXjRsNZONLZnzt7pum1isjkdF8OgCXy4a4k1MHO3t0VwxVUPyhxECzzG0c9J1knO_s8EhjpjPn9spZCiVVe"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Página para Emprendedor</h4>
+                                        <p class="text-gray-300">Sitio web informativo entregado en 24 horas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex-shrink-0 p-4 carousel-item">
+                                <div class="portfolio-card group h-full">
+                                    <img alt="Ejemplo web express 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_WLFTheIXO-kkg7Fq5zyWEJ3BdFGnhy4pP_YXmqwZJZC5ANdKGcfBlLbUuWMcWhtgZFZpAArEB5HG1iWQEtXVt061Mpls1qpV2MFzQK862nIwjNfOStXC7fzrTmOV-jWSH9-q2pBtB51sPKYy_PKhjLodgd0vbqAqBqhY89XY1S6OiKDfYoxR9qjp8-a5sv2YiLCKzazuEy4Y1F_ZKHhNk0J_9l1O_A7I7mkHrJrJ3VFbte_pqS8cQ-l_zjqocFuEqsjLJdGRvGxL"/>
+                                    <div class="portfolio-overlay">
+                                        <h4 class="text-xl font-bold text-white">Web de Promoción</h4>
+                                        <p class="text-gray-300">Página sencilla para una campaña de marketing urgente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button @click="scroll(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block ml-2"><span class="material-icons">chevron_left</span></button>
+                        <button @click="scroll(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hidden md:block mr-2"><span class="material-icons">chevron_right</span></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Características Incluidas -->
     <section class="section">
-        <h2 class="section-title">Todos los Planes Incluyen</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
-                <i class="fas fa-globe text-white text-xl"></i>
-                <h3 class="text-white text-base font-bold">Diseño Responsivo</h3>
+        <h2 class="section-title">Incluido en Todos los Planes</h2>
+        <p class="section-subtitle">Garantizamos calidad y rendimiento en cada proyecto que entregamos.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center p-6">
+                <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#affa4c] bg-opacity-10 mx-auto mb-4">
+                    <i class="fas fa-mobile-alt text-[#affa4c] text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Diseño Responsivo</h3>
+                <p class="text-gray-400">Tu sitio se verá perfecto en cualquier dispositivo: móviles, tablets y computadoras.</p>
             </div>
-            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
-                <i class="fas fa-mobile-alt text-white text-xl"></i>
-                <h3 class="text-white text-base font-bold">Adaptado a Móviles</h3>
+            <div class="text-center p-6">
+                <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#affa4c] bg-opacity-10 mx-auto mb-4">
+                    <i class="fas fa-search text-[#affa4c] text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">SEO Básico</h3>
+                <p class="text-gray-400">Optimización para motores de búsqueda con metadatos y estructura amigable.</p>
             </div>
-            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
-                <i class="fas fa-search text-white text-xl"></i>
-                <h3 class="text-white text-base font-bold">Optimizado para SEO</h3>
+            <div class="text-center p-6">
+                <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#affa4c] bg-opacity-10 mx-auto mb-4">
+                    <i class="fas fa-tachometer-alt text-[#affa4c] text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Rendimiento Optimizado</h3>
+                <p class="text-gray-400">Carga rápida y experiencia de usuario fluida para mejorar la retención.</p>
             </div>
-            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
-                <i class="fas fa-shield-alt text-white text-xl"></i>
-                <h3 class="text-white text-base font-bold">Seguridad Reforzada</h3>
-            </div>
-            <div class="bg-[#283518] border border-[#506a2f] rounded-lg p-4 flex items-center gap-3">
-                <i class="fas fa-clock text-white text-xl"></i>
-                <h3 class="text-white text-base font-bold">Entrega Rápida</h3>
+            <div class="text-center p-6">
+                <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#affa4c] bg-opacity-10 mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-[#affa4c] text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Seguridad Básica</h3>
+                <p class="text-gray-400">Protección contra amenazas comunes y certificado SSL incluido.</p>
             </div>
         </div>
     </section>
     
     <!-- Proceso de Trabajo -->
-    <section class="section">
+    <section class="section bg-card">
         <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
-        <div class="space-y-6">
-            <div class="flex gap-4">
-                <div class="flex flex-col items-center">
-                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
-                        1
+        <p class="section-subtitle">Un flujo de trabajo simple y efectivo para llevar tu idea a la realidad.</p>
+        <div class="relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[#506a2f] -translate-y-1/2"></div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <div class="mx-auto w-16 h-16 rounded-full bg-[#283518] border-2 border-[#affa4c] flex items-center justify-center text-[#affa4c] text-2xl font-bold">01</div>
                     </div>
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Consulta Inicial</h3>
+                    <p class="text-gray-400">Comprendemos tus necesidades y objetivos para definir el alcance del proyecto.</p>
                 </div>
-                <div>
-                    <h3 class="text-white text-base font-bold">Consulta Inicial</h3>
-                    <p class="text-[#b2cc8e] text-sm">Entendemos tus necesidades y objetivos.</p>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <div class="mx-auto w-16 h-16 rounded-full bg-[#283518] border-2 border-[#affa4c] flex items-center justify-center text-[#affa4c] text-2xl font-bold">02</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Diseño y Propuesta</h3>
+                    <p class="text-gray-400">Creamos un diseño visual y te presentamos una propuesta detallada.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <div class="mx-auto w-16 h-16 rounded-full bg-[#283518] border-2 border-[#affa4c] flex items-center justify-center text-[#affa4c] text-2xl font-bold">03</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Desarrollo</h3>
+                    <p class="text-gray-400">Construimos tu sitio web con las mejores prácticas y tecnologías actuales.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <div class="mx-auto w-16 h-16 rounded-full bg-[#283518] border-2 border-[#affa4c] flex items-center justify-center text-[#affa4c] text-2xl font-bold">04</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Entrega y Soporte</h3>
+                    <p class="text-gray-400">Publicamos tu sitio web y brindamos soporte para asegurar su correcto funcionamiento.</p>
                 </div>
             </div>
-            
-            <div class="flex gap-4">
-                <div class="flex flex-col items-center">
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
-                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
-                        2
-                    </div>
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
-                </div>
-                <div>
-                    <h3 class="text-white text-base font-bold">Diseño y Desarrollo</h3>
-                    <p class="text-[#b2cc8e] text-sm">Creamos un diseño a medida y lo desarrollamos.</p>
-                </div>
-            </div>
-            
-            <div class="flex gap-4">
-                <div class="flex flex-col items-center">
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
-                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
-                        3
-                    </div>
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
-                </div>
-                <div>
-                    <h3 class="text-white text-base font-bold">Revisiones y Aprobación</h3>
-                    <p class="text-[#b2cc8e] text-sm">Realizamos ajustes según tus comentarios.</p>
-                </div>
-            </div>
-            
-            <div class="flex gap-4">
-                <div class="flex flex-col items-center">
-                    <div class="w-0.5 bg-[#506a2f] flex-1"></div>
-                    <div class="w-10 h-10 bg-[#affa4c] rounded-full flex items-center justify-center text-black font-bold mb-2">
-                        4
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-white text-base font-bold">Lanzamiento y Soporte</h3>
-                    <p class="text-[#b2cc8e] text-sm">Tu sitio web está en línea y te brindamos soporte continuo.</p>
-                </div>
+        </div>
+    </section>
+    
+    <!-- Síguenos Section -->
+    <section class="section bg-card">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">Síguenos</h2>
+            <p class="section-subtitle">
+                En nuestras redes sociales encontrarás ejemplos de sitios web que hemos vendido y comentarios de nuestros clientes.
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a class="text-gray-400 hover:text-[#affa4c] transition-colors duration-300" href="#">
+                    <svg aria-hidden="true" class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd" d="M12.315 2c-4.42 0-7.8 3.38-7.8 7.8s3.38 7.8 7.8 7.8 7.8-3.38 7.8-7.8S16.735 2 12.315 2zm0 13.6c-3.21 0-5.8-2.59-5.8-5.8s2.59-5.8 5.8-5.8 5.8 2.59 5.8 5.8-5.8 5.8zM20.815 6.4a1.601 1.601 0 11-3.202 0 1.601 1.601 0 013.202 0z" fill-rule="evenodd"></path>
+                        <path d="M12.315 6a3.8 3.8 0 100 7.6 3.8 3.8 0 000-7.6zm-5.8 3.8a5.8 5.8 0 1111.6 0 5.8 5.8 0 01-11.6 0z"></path>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-[#affa4c] transition-colors duration-300" href="#">
+                    <svg aria-hidden="true" class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-[#affa4c] transition-colors duration-300" href="https://wa.me/tunumero" target="_blank">
+                    <svg aria-hidden="true" class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd" d="M18.413 5.587A9.957 9.957 0 0012 2C6.477 2 2 6.477 2 12c0 1.742.448 3.393 1.254 4.85l-1.24 4.54 4.65-1.22A9.94 9.94 0 0012 22a9.956 9.956 0 007.142-2.929A9.956 9.956 0 0022 12a9.957 9.957 0 00-3.587-6.413zM12 20.25a8.2 8.2 0 01-4.22-1.218l-.3-.18-3.13.82.84-3.07-.2.32A8.23 8.23 0 013.75 12 3.75 12a8.25 8.25 0 018.25 8.25c0 4.55-3.7 8.25-8.25 8.25zm4.36-5.83c-.22-.11-.8-1.02-.92-1.15-.13-.13-.22-.2-.31-.07-.09.13-.25.25-.79.25-1.02s.04-1.15.04-1.15c.09-.07.22-.09.31-.07.09.13.25.31.07.09.13.09.13.09zm-.22-.11z" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -357,18 +522,18 @@
     <!-- CTA Section -->
     <section class="section text-center py-16">
         <h2 class="text-white text-2xl md:text-3xl font-bold mb-4 max-w-2xl mx-auto">
-            Da el Primer Paso Hacia tu Éxito Digital
+            ¿Listo para tener tu web profesional?
         </h2>
         <p class="text-white text-base mb-8 max-w-2xl mx-auto">
-            Solicita una cotización sin compromiso y descubre cómo podemos ayudarte a alcanzar tus metas.
+            Contáctanos hoy mismo y en menos de 48 horas tendrás tu sitio web funcionando. ¡Aprovecha nuestra promoción express y destaca en el mundo digital!
         </p>
-        <a href="#contacto" class="btn-neon">
-            Contáctanos
+        <a href="#contact" class="btn-neon">
+            Contáctanos ahora
         </a>
     </section>
     
     <!-- Footer -->
-    <footer id="contacto" class="footer">
+    <footer class="footer">
         <div class="flex flex-wrap justify-center gap-6 mb-6">
             <a class="text-[#b2cc8e] text-base" href="#">Política de Privacidad</a>
             <a class="text-[#b2cc8e] text-base" href="#">Términos de Servicio</a>
@@ -387,7 +552,6 @@
         <p class="text-[#b2cc8e] text-base">© 2024 Web Solutions. Todos los derechos reservados.</p>
     </footer>
     
-    <!-- Enlace a archivo JavaScript personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
